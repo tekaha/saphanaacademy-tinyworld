@@ -1,0 +1,37 @@
+ID: saphanaacademy-tinyworld
+_schema-version: '2.0'
+version: 0.0.1
+
+modules:
+ - name: tinydb
+   type: hdb
+   path: tinydb
+   requires:
+    - name: hdi_tinydb
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+
+ 
+
+resources:
+ - name: hdi_tinydb
+   parameters:
+      config:
+         schema: TINYDB
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
